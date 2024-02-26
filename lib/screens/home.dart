@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lemonsensei_home/components/headerMobile.dart';
 
 import '../components/drawerMenu.dart';
@@ -10,6 +12,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.sizeOf(context).width;
+
+    SystemChrome.setApplicationSwitcherDescription(
+        const ApplicationSwitcherDescription(label: "LemonSensei - Home"));
 
     return Scaffold(
       appBar: PreferredSize(
@@ -42,7 +47,42 @@ class HomePage extends StatelessWidget {
               "LemonSensei - Personal Archive",
               style: Theme.of(context).textTheme.titleMedium,
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 100,
+              left: 25,
+              right: 25,
+            ),
+            child: Center(
+              child: Text(
+                "If you wanted to know about me",
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ),
+          ),
+          Center(
+            child: Text(
+              "Please consider read my resume",
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 25,
+            ),
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  context.go("/resume");
+                },
+                child: Text(
+                  "Press with gentle",
+                  style: Theme.of(context).textTheme.labelLarge,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

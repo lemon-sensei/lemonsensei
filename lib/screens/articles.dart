@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:lemonsensei_home/components/header.dart';
 
 import '../components/drawerMenu.dart';
@@ -9,6 +10,9 @@ class ArticlePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setApplicationSwitcherDescription(
+        const ApplicationSwitcherDescription(label: "LemonSensei - Articles"));
+
     var screenWidth = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
