@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HeaderMobile extends StatelessWidget {
   const HeaderMobile({
@@ -9,11 +10,16 @@ class HeaderMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      title: const Text("LemonSensei",
-          style: TextStyle(
-            fontFamily: "KodeMono",
-            fontWeight: FontWeight.bold,
-          )),
+      title: InkWell(
+        onTap: () {
+          context.go("/");
+        },
+        child: const Text("LemonSensei",
+            style: TextStyle(
+              fontFamily: "KodeMono",
+              fontWeight: FontWeight.bold,
+            )),
+      ),
     );
   }
 }

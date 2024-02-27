@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 
 class Header extends StatelessWidget {
@@ -19,15 +20,20 @@ class Header extends StatelessWidget {
           radius: 2,
         ),
       ),
-      title: const Padding(
-        padding: EdgeInsets.only(
+      title: Padding(
+        padding: const EdgeInsets.only(
           top: 10,
         ),
-        child: Text(
-          "LemonSensei",
-          style: TextStyle(
-            fontFamily: "KodeMono",
-            fontWeight: FontWeight.bold,
+        child: InkWell(
+          onTap: () {
+            context.go("/");
+          },
+          child: const Text(
+            "LemonSensei",
+            style: TextStyle(
+              fontFamily: "KodeMono",
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),
