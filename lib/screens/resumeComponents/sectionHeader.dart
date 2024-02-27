@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class CertificateHeader extends StatelessWidget {
+class SectionHeader extends StatelessWidget {
+  @required
+  final Icon headerIcon;
   @required
   final String headerName;
 
-  const CertificateHeader({
+  const SectionHeader({
     super.key,
     required this.headerName,
+    required this.headerIcon,
   });
 
   @override
@@ -15,15 +18,15 @@ class CertificateHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Padding(
-          padding: EdgeInsets.only(
+         Padding(
+          padding: const EdgeInsets.only(
             top: 15,
             left: 25,
           ),
           child: Card(
             child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Icon(FontAwesomeIcons.solidBookmark),
+              padding: const EdgeInsets.all(10),
+              child: headerIcon,
             ),
           ),
         ),
