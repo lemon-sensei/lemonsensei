@@ -1,10 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:lemonsensei_home/screens/accomplishments.dart';
-import 'package:lemonsensei_home/screens/articles.dart';
-import 'package:lemonsensei_home/screens/contact.dart';
-import 'package:lemonsensei_home/screens/home.dart';
-import 'package:lemonsensei_home/screens/resume.dart';
 
 import 'package:url_strategy/url_strategy.dart';
 import 'package:appwrite/appwrite.dart';
@@ -32,7 +26,6 @@ class LemonSensei extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: appColorTheme,
