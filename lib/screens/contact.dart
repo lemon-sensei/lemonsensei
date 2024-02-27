@@ -7,6 +7,7 @@ import 'package:lemonsensei_home/components/header.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../components/drawerMenu.dart';
+import '../components/footer.dart';
 import '../components/headerMobile.dart';
 
 class ContactPage extends StatefulWidget {
@@ -32,59 +33,64 @@ class _ContactPageState extends State<ContactPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(
-              height: 100,
-            ),
-            const Center(
-              child: Text(
-                "LemonSensei • Work Hard • Play Harder",
-                style: TextStyle(
-                  fontFamily: "KodeMono",
-                  fontWeight: FontWeight.bold,
+            Column(
+              children: [
+                const SizedBox(
+                  height: 100,
                 ),
-              ),
-            ),
-            Center(
-              child: Text(
-                "Contact Information",
-                style: Theme.of(context).textTheme.headlineLarge,
-              ),
-            ),
-            screenWidth > 600 ? DesktopContact() : MobileContact(),
-            const SizedBox(
-              height: 100,
-            ),
-            Center(
-              child: Text(
-                "Or",
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-            ),
-            const SizedBox(
-              height: 100,
-            ),
-            Center(
-              child: Text(
-                "Leave me a message",
-                style: Theme.of(context).textTheme.headlineLarge,
-              ),
-            ),
-            screenWidth > 600 ? desktopForm(context) : mobileForm(context),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 50,
-                bottom: 50,
-              ),
-              child: ElevatedButton(
-                onPressed: () {
-                  if (_contactFormKey.currentState!.validate()) {}
-                },
-                child: Text(
-                  "Upload Data",
-                  style: Theme.of(context).textTheme.bodyLarge,
+                const Center(
+                  child: Text(
+                    "LemonSensei • Work Hard • Play Harder",
+                    style: TextStyle(
+                      fontFamily: "KodeMono",
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
+                Center(
+                  child: Text(
+                    "Contact Information",
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ),
+                ),
+                screenWidth > 600 ? DesktopContact() : MobileContact(),
+                const SizedBox(
+                  height: 100,
+                ),
+                Center(
+                  child: Text(
+                    "Or",
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                ),
+                const SizedBox(
+                  height: 100,
+                ),
+                Center(
+                  child: Text(
+                    "Leave me a message",
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ),
+                ),
+                screenWidth > 600 ? desktopForm(context) : mobileForm(context),
+                Padding(
+                  padding: const EdgeInsets.only(
+                    top: 50,
+                    bottom: 50,
+                  ),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      if (_contactFormKey.currentState!.validate()) {}
+                    },
+                    child: Text(
+                      "Upload Data",
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
+                  ),
+                ),
+              ],
             ),
+            const Footer(),
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lemonsensei_home/components/header.dart';
 
 import '../components/drawerMenu.dart';
@@ -21,29 +22,45 @@ class ArticlePage extends StatelessWidget {
         child: screenWidth < 600 ? const HeaderMobile() : const Header(),
       ),
       drawer: screenWidth < 600 ? const DrawerMenu() : null,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 100,
-            ),
-            const Center(
-              child: Text(
-                "• LemonSensei •",
-                style: TextStyle(
-                  fontFamily: "KodeMono",
-                  fontWeight: FontWeight.bold,
-                ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const Center(
+            child: Text(
+              "• LemonSensei •",
+              style: TextStyle(
+                fontFamily: "KodeMono",
+                fontWeight: FontWeight.bold,
               ),
             ),
-            Center(
+          ),
+          Text(
+            "Adventure Journal",
+            style: Theme.of(context).textTheme.headlineLarge,
+          ),
+          const SizedBox(
+            height: 100,
+          ),
+          Text(
+            "Blog data will be emerge soon...",
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 25,
+            ),
+            child: ElevatedButton(
+              onPressed: () {
+                context.go("/");
+              },
               child: Text(
-                "Adventure Journal",
-                style: Theme.of(context).textTheme.headlineLarge,
+                "Back to Home",
+                style: Theme.of(context).textTheme.labelLarge,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:lemonsensei_home/components/header.dart';
 
 import '../components/drawerMenu.dart';
+import '../components/footer.dart';
 import '../components/headerMobile.dart';
 import 'accomplishmentComponents/dataEngineeringBigDataAndMachineLearningOnGCPSpecialization.dart';
 import 'accomplishmentComponents/googleCybersecurityProfessionalCertificate.dart';
@@ -27,31 +28,36 @@ class AccomplishmentsPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(
-              height: 100,
-            ),
-            const Center(
-              child: Text(
-                "• LemonSensei •",
-                style: TextStyle(
-                  fontFamily: "KodeMono",
-                  fontWeight: FontWeight.bold,
+            Column(
+              children: [
+                const SizedBox(
+                  height: 100,
                 ),
-              ),
+                const Center(
+                  child: Text(
+                    "• LemonSensei •",
+                    style: TextStyle(
+                      fontFamily: "KodeMono",
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    "Honors & Accomplishments",
+                    style: Theme.of(context).textTheme.headlineSmall,
+                  ),
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
+                if (screenWidth <= 1000) const MobileAccomplishments(),
+                if (screenWidth > 1000 && screenWidth <= 1400)
+                  const TabletAccomplishments(),
+                if (screenWidth > 1400) const DesktopAccomplishments(),
+              ],
             ),
-            Center(
-              child: Text(
-                "Honors & Accomplishments",
-                style: Theme.of(context).textTheme.headlineSmall,
-              ),
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            if (screenWidth <= 1000) const MobileAccomplishments(),
-            if (screenWidth > 1000 && screenWidth <= 1400)
-              const TabletAccomplishments(),
-            if (screenWidth > 1400) const DesktopAccomplishments(),
+            const Footer(),
           ],
         ),
       ),
