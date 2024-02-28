@@ -31,8 +31,8 @@ class ResumeSkills extends StatelessWidget {
               height: 25,
             ),
             SectionHeader(
-              headerIcon: Icon(FontAwesomeIcons.award),
-              headerName: "Tech Skill",
+              headerIcon: Icon(FontAwesomeIcons.computer),
+              headerName: "Tech Skills",
             ),
             SkillDetail(
               skillName: "Flutter",
@@ -78,8 +78,8 @@ class ResumeSkills extends StatelessWidget {
               height: 25,
             ),
             SectionHeader(
-              headerIcon: Icon(FontAwesomeIcons.award),
-              headerName: "Soft Skill",
+              headerIcon: Icon(FontAwesomeIcons.handshake),
+              headerName: "Soft Skills",
             ),
             SkillDetail(
               skillName: "Working in Gigs",
@@ -126,7 +126,7 @@ class ResumeSkills extends StatelessWidget {
             ),
             SectionHeader(
               headerIcon: Icon(FontAwesomeIcons.language),
-              headerName: "Language Skill",
+              headerName: "Language Skills",
             ),
             SkillDetail(
               skillName: "Thai",
