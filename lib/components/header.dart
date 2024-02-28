@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 
 class Header extends StatelessWidget {
@@ -47,7 +49,7 @@ class Header extends StatelessWidget {
               context.go("/");
             },
             child: Text(
-              "Home",
+              "main-menu.home".tr(),
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
@@ -61,7 +63,7 @@ class Header extends StatelessWidget {
               context.go("/articles");
             },
             child: Text(
-              "Articles",
+              "main-menu.articles".tr(),
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
@@ -75,7 +77,7 @@ class Header extends StatelessWidget {
               context.go("/accomplishments");
             },
             child: Text(
-              "Accomplishments",
+              "main-menu.accomplishments".tr(),
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
@@ -89,7 +91,7 @@ class Header extends StatelessWidget {
               context.go("/resume");
             },
             child: Text(
-              "Resume",
+              "main-menu.resume".tr(),
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
@@ -104,7 +106,27 @@ class Header extends StatelessWidget {
               context.go("/contact");
             },
             child: Text(
-              "Contact",
+              "main-menu.contact".tr(),
+              style: Theme.of(context).textTheme.titleSmall,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(
+            top: 10,
+            left: 25,
+            right: 10,
+          ),
+          child: TextButton(
+            onPressed: () {
+              if (context.locale.toString() == "en_US") {
+                context.setLocale(const Locale('th', 'TH'));
+              } else if (context.locale.toString() == "th_TH") {
+                context.setLocale(const Locale('en', 'US'));
+              }
+            },
+            child: Text(
+              "main-menu.lang".tr(),
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),

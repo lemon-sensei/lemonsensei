@@ -1,23 +1,29 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'package:url_strategy/url_strategy.dart';
-import 'package:appwrite/appwrite.dart';
 
 import 'configs/colorConfig.dart';
 import 'configs/textConfig.dart';
 import 'configs/routeConfig.dart';
 
-void main() {
-  setPathUrlStrategy();
-  runApp(const LemonSensei());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
 
-  Client client = Client();
-  client
-      .setEndpoint('https://cloud.appwrite.io/v1')
-      .setProject('lemonsensei-home')
-      .setSelfSigned(
-          status:
-              true); // For self signed certificates, only use for development
+  setPathUrlStrategy();
+
+  runApp(
+    EasyLocalization(
+      path: "assets/translations",
+      fallbackLocale: const Locale('en', 'US'),
+      supportedLocales: const [
+        Locale('en', 'US'),
+        Locale('th', 'TH'),
+      ],
+      child: const LemonSensei(),
+    ),
+  );
 }
 
 class LemonSensei extends StatelessWidget {
@@ -26,6 +32,9 @@ class LemonSensei extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: appColorTheme,

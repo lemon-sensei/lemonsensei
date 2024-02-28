@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
@@ -25,7 +26,7 @@ class Footer extends StatelessWidget {
             bottom: 25,
           ),
           child: Text(
-            "© 2024 LemonSensei. All Rights Reserved.",
+            "footer.copyright".tr(),
             style: Theme.of(context).textTheme.bodyLarge,
           ),
         ),
