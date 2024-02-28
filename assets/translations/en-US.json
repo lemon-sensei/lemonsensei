@@ -1,0 +1,22 @@
+{
+  "main-menu": {
+    "home": "Home",
+    "articles": "Articles",
+    "accomplishments": "Accomplishments",
+    "resume": "Resume",
+    "contact": "Contact",
+    "lang": "EN"
+  },
+  "drawer-menu": {
+    "home": "Home",
+    "articles": "Articles",
+    "accomplishments": "Accomplishments",
+    "resume": "Resume",
+    "contact": "Contact",
+    "personal-archive": "Personal Archive",
+    "lang": "EN"
+  },
+  "footer": {
+    "copyright": "© 2024 LemonSensei. All Rights Reserved."
+  }
+}

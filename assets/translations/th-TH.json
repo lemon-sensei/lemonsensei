@@ -1,0 +1,22 @@
+{
+  "main-menu": {
+    "home": "หน้าแรก",
+    "articles": "บทความ",
+    "accomplishments": "การบรรลุเป้าหมาย",
+    "resume": "เรซูเม่",
+    "contact": "ติดต่อ",
+    "lang": "TH"
+  },
+  "drawer-menu": {
+    "home": "หน้าแรก",
+    "articles": "บทความ",
+    "accomplishments": "การบรรลุเป้าหมาย",
+    "resume": "เรซูเม่",
+    "contact": "ติดต่อ",
+    "personal-archive": "คลังข้อมูลส่วนบุคคล",
+    "lang": "TH"
+  },
+  "footer": {
+    "copyright": "© 2567 LemonSensei. สงวนลิขสิทธิ"
+  }
+}
