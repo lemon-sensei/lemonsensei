@@ -41,6 +41,7 @@ dependencies:
   url_launcher: ^6.2.5
   go_router: ^13.2.0
   easy_localization: ^3.0.4
+  universal_html: ^2.2.4
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +72,10 @@ flutter:
     - assets/translations/th-TH.json
     - assets/images/lemonsensei.png
     - assets/images/lemonsensei-profile.jpg
+    - assets/images/galleries/1.jpg
+    - assets/images/galleries/2.jpg
+    - assets/images/galleries/3.jpg
+    - assets/images/galleries/4.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
