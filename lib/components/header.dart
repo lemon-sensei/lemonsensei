@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:go_router/go_router.dart';
+import 'package:universal_html/html.dart' as html;
 
 class Header extends StatelessWidget {
   const Header({
@@ -11,17 +11,9 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var currentPath = GoRouter.of(context).routeInformationProvider.value.uri;
+
     return AppBar(
-      leading: const Padding(
-        padding: EdgeInsets.only(
-          top: 10,
-          left: 10,
-          bottom: 10,
-        ),
-        child: CircleAvatar(
-          radius: 2,
-        ),
-      ),
       title: Padding(
         padding: const EdgeInsets.only(
           top: 10,
@@ -118,12 +110,15 @@ class Header extends StatelessWidget {
             right: 10,
           ),
           child: TextButton(
-            onPressed: () {
+            onPressed: () async {
               if (context.locale.toString() == "en_US") {
                 context.setLocale(const Locale('th', 'TH'));
               } else if (context.locale.toString() == "th_TH") {
                 context.setLocale(const Locale('en', 'US'));
               }
+
+              await Future.delayed(const Duration(milliseconds: 50));
+              html.window.location.reload();
             },
             child: Text(
               "main-menu.lang".tr(),

@@ -18,9 +18,6 @@ class DrawerMenu extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CircleAvatar(
-                  radius: 30,
-                ),
                 const Text(
                   "LemonSensei",
                   style: TextStyle(
