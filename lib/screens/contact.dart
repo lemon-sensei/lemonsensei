@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -49,7 +50,7 @@ class _ContactPageState extends State<ContactPage> {
                 ),
                 Center(
                   child: Text(
-                    "Contact Information",
+                    "contact.contact-information".tr(),
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                 ),
@@ -59,7 +60,7 @@ class _ContactPageState extends State<ContactPage> {
                 ),
                 Center(
                   child: Text(
-                    "Or",
+                    "contact.or".tr(),
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                 ),
@@ -68,7 +69,7 @@ class _ContactPageState extends State<ContactPage> {
                 ),
                 Center(
                   child: Text(
-                    "Leave me a message",
+                    "contact.leave-me-message".tr(),
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                 ),
@@ -83,7 +84,7 @@ class _ContactPageState extends State<ContactPage> {
                       if (_contactFormKey.currentState!.validate()) {}
                     },
                     child: Text(
-                      "Upload Data",
+                      "contact.submit".tr(),
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
@@ -117,10 +118,10 @@ class _ContactPageState extends State<ContactPage> {
                       validator: (value) {},
                       decoration: InputDecoration(
                         label: Text(
-                          "Title",
+                          "contact.title".tr(),
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
-                        hintText: "I will always be respect to all humankind",
+                        hintText: "contact.title-desc".tr(),
                         hintStyle: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
@@ -137,10 +138,10 @@ class _ContactPageState extends State<ContactPage> {
                       validator: (value) {},
                       decoration: InputDecoration(
                         label: Text(
-                          "Name",
+                          "contact.name".tr(),
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
-                        hintText: "What should I call you",
+                        hintText: "contact.name-desc".tr(),
                         hintStyle: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
@@ -158,10 +159,10 @@ class _ContactPageState extends State<ContactPage> {
                 validator: (value) {},
                 decoration: InputDecoration(
                   label: Text(
-                    "Company",
+                    "contact.company".tr(),
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  hintText: "In case if you are an organization",
+                  hintText: "contact.company-desc".tr(),
                   hintStyle: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
@@ -179,10 +180,10 @@ class _ContactPageState extends State<ContactPage> {
                       validator: (value) {},
                       decoration: InputDecoration(
                         label: Text(
-                          "Email Address",
+                          "contact.email".tr(),
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
-                        hintText: "Please provide your most favorite one",
+                        hintText: "contact.email-desc".tr(),
                         hintStyle: Theme.of(context).textTheme.bodySmall,
                       ),
                       keyboardType: TextInputType.emailAddress,
@@ -200,10 +201,10 @@ class _ContactPageState extends State<ContactPage> {
                       validator: (value) {},
                       decoration: InputDecoration(
                         label: Text(
-                          "Phone Number",
+                          "contact.phone".tr(),
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
-                        hintText: "I will use this only in urgency",
+                        hintText: "contact.phone-desc".tr(),
                         hintStyle: Theme.of(context).textTheme.bodySmall,
                       ),
                       keyboardType: TextInputType.phone,
@@ -222,10 +223,10 @@ class _ContactPageState extends State<ContactPage> {
                 validator: (value) {},
                 decoration: InputDecoration(
                   label: Text(
-                    "Subject",
+                    "contact.subject".tr(),
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  hintText: "Give me some clear topic",
+                  hintText: "contact.subject-desc".tr(),
                   hintStyle: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
@@ -240,10 +241,10 @@ class _ContactPageState extends State<ContactPage> {
                 validator: (value) {},
                 decoration: InputDecoration(
                   label: Text(
-                    "Detail",
+                    "contact.detail".tr(),
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  hintText: "Finally! hand me a brief detail",
+                  hintText: "contact.detail-desc".tr(),
                   hintStyle: Theme.of(context).textTheme.bodySmall,
                 ),
                 keyboardType: TextInputType.multiline,
@@ -272,10 +273,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Title",
+                  "contact.title".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "I will always be respect to all humankind",
+                hintText: "contact.title-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
             ),
@@ -290,10 +291,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Name",
+                  "contact.name".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "What should I call you",
+                hintText: "contact.name-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
             ),
@@ -308,10 +309,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Company",
+                  "contact.company".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "In case if you are an organization",
+                hintText: "contact.company-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
             ),
@@ -326,10 +327,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Email Address",
+                  "contact.email".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "Please provide your most favorite one",
+                hintText: "contact.email-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
               keyboardType: TextInputType.emailAddress,
@@ -345,10 +346,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Phone Number",
+                  "contact.phone".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "I will use this only in urgency",
+                hintText: "contact.phone-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
               keyboardType: TextInputType.phone,
@@ -364,10 +365,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Subject",
+                  "contact.subject".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "Give me some clear topic",
+                hintText: "contact.subject-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
             ),
@@ -382,10 +383,10 @@ class _ContactPageState extends State<ContactPage> {
               validator: (value) {},
               decoration: InputDecoration(
                 label: Text(
-                  "Detail",
+                  "contact.detail".tr(),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
-                hintText: "Finally! hand me a brief detail",
+                hintText: "contact.detail-desc".tr(),
                 hintStyle: Theme.of(context).textTheme.bodySmall,
               ),
               keyboardType: TextInputType.multiline,
