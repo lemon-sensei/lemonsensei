@@ -46,20 +46,20 @@ class Header extends StatelessWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(
-            top: 10,
-          ),
-          child: TextButton(
-            onPressed: () {
-              context.go("/articles");
-            },
-            child: Text(
-              "main-menu.articles".tr(),
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-          ),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.only(
+        //     top: 10,
+        //   ),
+        //   child: TextButton(
+        //     onPressed: () {
+        //       context.go("/articles");
+        //     },
+        //     child: Text(
+        //       "main-menu.articles".tr(),
+        //       style: Theme.of(context).textTheme.titleSmall,
+        //     ),
+        //   ),
+        // ),
         Padding(
           padding: const EdgeInsets.only(
             top: 10,

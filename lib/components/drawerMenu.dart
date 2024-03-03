@@ -43,16 +43,16 @@ class DrawerMenu extends StatelessWidget {
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
-          ListTile(
-            onTap: () {
-              context.go("/articles");
-            },
-            leading: const Icon(FontAwesomeIcons.book),
-            title: Text(
-              "drawer-menu.articles".tr(),
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-          ),
+          // ListTile(
+          //   onTap: () {
+          //     context.go("/articles");
+          //   },
+          //   leading: const Icon(FontAwesomeIcons.book),
+          //   title: Text(
+          //     "drawer-menu.articles".tr(),
+          //     style: Theme.of(context).textTheme.titleSmall,
+          //   ),
+          // ),
           ListTile(
             onTap: () {
               context.go("/accomplishments");
