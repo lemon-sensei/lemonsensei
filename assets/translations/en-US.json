@@ -111,7 +111,7 @@
       "secretary-ns": "Secretary of The Commission Monitors, Recommends, and Expedites National Reform.",
       "secretary-ns-desc1": "The Strategy for Eco-Friendly \nDevelopment and Growth",
       "wbdo": "World Buddhist Dhammaduta Organisation",
-      "wbdo-desc1": "Data Aggregation and Registration Development",
+      "wbdo-desc1": "System Data Aggregation \nRegistration System Development",
       "hopehof": "Hope Hof Ltd.",
       "hopehof-desc1": "Small Software House. \nLaunched in the Southern of Thailand."
     },
@@ -124,8 +124,20 @@
     },
     "self-education": {
       "self-education-title": "Self Education"
+    },
+    "interests": {
+      "interests-title": "Interests",
+      "video-game": "Video Game",
+      "video-game-desc1": "I love Genshin Impact.",
+      "anime-piano": "Anime Piano",
+      "anime-piano-desc1": "I hope one day I could play like a real pro.",
+      "machine-learning": "Machine Learning",
+      "machine-learning-desc1": "The way that could solve work problem better.",
+      "linux": "Linux Operating System",
+      "linux-desc1": "The replacement of Windows environment.",
+      "cyber-security": "CyberSecurity",
+      "cyber-security-desc1": "How to secure online activities for everyone."
     }
-
   },
 
   "contact": {
