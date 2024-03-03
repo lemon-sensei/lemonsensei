@@ -70,7 +70,7 @@ flutter:
   assets:
     - assets/translations/en-US.json
     - assets/translations/th-TH.json
-    - assets/images/lemonsensei.png
+    - assets/images/lemonsensei.jpg
     - assets/images/lemonsensei-profile.jpg
     - assets/images/galleries/1.jpg
     - assets/images/galleries/2.jpg
