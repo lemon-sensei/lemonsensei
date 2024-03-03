@@ -43,6 +43,87 @@
       "skill-dataVis": "Data Visualization"
     }
   },
+  "accomplishments": {
+    "title": "Accomplishments",
+    "specialization": "Specialization Certificate",
+    "course": "Course Certificates",
+    "view-cert": "View Certification",
+    "issuing-in-progress": "Issuing in Progress"
+  },
+
+
+  "resume": {
+    "name": "Inthad Yuvajita",
+    "cto": "Computer Technical Officer",
+    "text": {
+      "intro": "Brief Introduction",
+      "intro-desc1": "During my journey, I have developed an understanding of applications in data analysis. Through the work and hands-on projects, I have gained experience in databases, manipulating data, and generating insightful presentations. I am also confident in my ability to develop any application from the web to a native machine using the Flutter framework."
+    },
+    "skill": {
+      "tech": {
+        "skill-tech": "Tech Skills",
+        "data-cleansing": "Data Cleansing",
+        "data-visualization": "Data Visualization",
+        "python": "Python (Programming Language)",
+        "c#": "C# (Programming Language)",
+        "dart": "Dart (Programming Language)",
+        "data-analysis": "Data Analysis",
+        "spreadsheets": "Spreadsheets",
+        "database-queries": "Database Queries"
+      },
+      "soft-skill": {
+        "soft-skill": "Soft Skills",
+        "curiosity-and-learning": "Curiosity and Learning",
+        "emotional-intelligence": "Emotional Intelligence",
+        "adaptability-and-flexibility": "Adaptability and Flexibility",
+        "ethical-awareness": "Ethical Awareness",
+        "critical-thinking": "Critical Thinking",
+        "creativity": "Creativity",
+        "collaboration-and-teamwork": "Collaboration and Teamwork",
+        "interpersonal-communication": "Interpersonal Communication",
+        "leadership": "Leadership"
+      },
+      "language": {
+        "skill-lang": "Language Skills",
+        "thai": "Thai",
+        "us": "English (US)"
+      }
+    },
+    "achievements": {
+      "achievements-title": "Achievements",
+      "nsc": "National Software Contest",
+      "nsc-desc1": "Entertainment software with Skull Servant project. Reached the final round of NSC 2017.",
+      "samo": "Student Association (University SAMO)",
+      "samo-desc1": "Internal & External Affair. \nHave been elected for 2 years.",
+      "digicon": "DigiCon6 Asia",
+      "digicon-desc1": "Best Audience Award.\nShort animation name FRI(END)."
+    },
+    "experiences": {
+      "experiences-title": "Experiences",
+      "oa": "Operation Assistant",
+      "oa-desc1": "Assistant of Thai Senator Code 212",
+      "politic-work": "Political Work Group",
+      "politic-work-desc1": "First Vice President of the Senate",
+      "secretary-ns": "Secretary of The Commission Monitors, Recommends, and Expedites National Reform.",
+      "secretary-ns-desc1": "The Strategy for Eco-Friendly \nDevelopment and Growth",
+      "wbdo": "World Buddhist Dhammaduta Organisation",
+      "wbdo-desc1": "Data Aggregation and Registration Development",
+      "hopehof": "Hope Hof Ltd.",
+      "hopehof-desc1": "Small Software House. \nLaunched in the Southern of Thailand."
+    },
+    "education": {
+      "education-title": "Educations",
+      "satit": "Demonstration Prince of Songkla University",
+      "satit-desc1": "Math & Art Program. GPAX 3.33",
+      "psuic": "Prince of Songkla University International College",
+      "psuic-desc1": "Digital Media Program, Major Interactive Media. GPAX 3.50 (First Honor)"
+    },
+    "self-education": {
+      "self-education-title": "Self Education"
+    }
+
+  },
+
   "contact": {
     "contact-information": "Contact Information",
     "or": "or",
@@ -62,66 +143,5 @@
     "subject-desc": "Give me some clear topic",
     "detail": "Detail",
     "detail-desc": "Finally! hand me a brief detail"
-  },
-  "accomplishments": {
-    "title": "Accomplishments",
-    "show-cert": "Show Certificate",
-    "specialization-certificate": "Specialization Certificate",
-    "course-certificates": "Course Certificates",
-    "completed-by": "Completed by"
-  },
-  "resume": {
-    "name": "Inthad Yuvajita",
-    "cto": "Computer Technical Officer",
-    "intro": "Brief Introduction",
-    "intro-desc1": "During my journey, I have developed an understanding of applications in data analysis. Through the work and hands-on projects, I have gained experience in databases, manipulating data, and generating insightful presentations. I am also confident in my ability to develop any application from the web to a native machine using the Flutter framework.",
-    "achievements": "Achievements",
-    "nsc": "National Software Contest",
-    "nsc-desc1": "Entertainment software with Skull Servant project",
-    "nsc-desc2": "Reached the final round of NSC 2017",
-    "samo": "Student Association (University SAMO)",
-    "samo-desc1": "Internal & External Affair",
-    "samo-desc2": "Have been elected for 2 years",
-    "digicon": "DigiCon6 Asia",
-    "digicon-desc1": "Best Audience Award",
-    "digicon-desc2": "Short animation name FRI(END)",
-    "experiences": "Experiences",
-    "oa": "Operation Assistant",
-    "oa-desc1": "Thai Senator 212",
-    "oa-desc2": "Member of Senate Sub-Committee",
-    "wbdo": "World Buddhist Dhammaduta Organisation",
-    "wbdo-desc": "Data Aggregation and Registration Development",
-    "hopehof": "Hope Hof Ltd.",
-    "hopehof-desc1": "Small Software House",
-    "hopehof-desc2": "Launch in the Southern of Thailand",
-    "education": "Educations",
-    "satit": "Demonstration Prince of Songkla University",
-    "satit-desc1": "Math & Art Program",
-    "satit-desc2": "GPAX 3.33",
-    "psuic": "Prince of Songkla University International College",
-    "psuic-desc1": "Digital Media Program, Major Interactive Media",
-    "psuic-desc2": "GPAX 3.50 (First Honor)",
-    "skill-tech": "Tech Skills",
-    "skill-data-cleansing": "Data Cleansing",
-    "skill-data-visualization": "Data Visualization",
-    "skill-python": "Python (Programming Language)",
-    "skill-c#": "C# (Programming Language)",
-    "skill-dart": "Dart (Programming Language)",
-    "skill-data-analysis": "Data Analysis",
-    "skill-spreadsheets": "Spreadsheets",
-    "skill-database-queries": "Database Queries",
-    "skill-soft": "Soft Skills",
-    "skill-curiosity-and-learning": "Curiosity and Learning",
-    "skill-emotional-intelligence": "Emotional Intelligence",
-    "skill-adaptability-and-flexibility": "Adaptability and Flexibility",
-    "skill-ethical-awareness": "Ethical Awareness",
-    "skill-critical-thinking": "Critical Thinking",
-    "skill-creativity": "Creativity",
-    "skill-collaboration-and-teamwork": "Collaboration and Teamwork",
-    "skill-interpersonal-communication": "Interpersonal Communication",
-    "skill-leadership": "Leadership",
-    "skill-lang": "Language Skills",
-    "skill-thai": "Thai",
-    "skill-us": "English (US)"
   }
 }
