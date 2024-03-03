@@ -15,10 +15,10 @@ class TechSkill extends StatelessWidget {
       color: Colors.transparent,
       elevation: 0,
       shape: const RoundedRectangleBorder(
-        side: BorderSide(color: Colors.black87, width: 5),
+        side: BorderSide(color: Colors.black87, width: 1),
       ),
       child: Container(
-        constraints: const BoxConstraints(maxWidth: 400),
+        constraints: const BoxConstraints(maxWidth: 375),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
