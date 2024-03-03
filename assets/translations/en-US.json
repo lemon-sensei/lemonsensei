@@ -19,6 +19,10 @@
   "footer": {
     "copyright": "© 2024 LemonSensei. All Rights Reserved."
   },
+  "404": {
+    "404-title": "Sorry! We can't find the page you're looking for.",
+    "home-button": "Back to Home"
+  },
   "home": {
     "name": "I'm Inthad",
     "position": "A Technical Software Developer",

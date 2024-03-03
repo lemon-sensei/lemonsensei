@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lemonsensei_home/components/header.dart';
@@ -16,23 +17,28 @@ class NotFound404 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: Text(
-              "ขออภัย! ไม่พบหน้าที่คุณต้องการ",
-              style: Theme.of(context).textTheme.displaySmall,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
+            child: Center(
+              child: Text(
+                "404.404-title".tr(),
+                style: Theme.of(context).textTheme.displaySmall,
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
-          const SizedBox(
-            height: 50,
-          ),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                context.go("/");
-              },
-              child: Text(
-                "กลับไปหน้าแรก",
-                style: Theme.of(context).textTheme.titleSmall,
+
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  context.go("/");
+                },
+                child: Text(
+                  "404.home-button".tr(),
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
               ),
             ),
           ),
